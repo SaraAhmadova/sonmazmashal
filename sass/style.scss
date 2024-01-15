@@ -1,0 +1,32 @@
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: unset;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 20px;
+    ul {
+        display: flex;
+        li {
+            margin: 5px;
+        }
+    }
+    .contactBtn {
+        padding: 6px 40px;
+        border: none;
+        border-radius: 12px;
+        background: linear-gradient(127deg, #ff7042 36.5%, #ffa73f 78.55%);
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.8px;
+    }
+}

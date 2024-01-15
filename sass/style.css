@@ -1,0 +1,47 @@
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header ul li {
+  margin: 5px;
+}
+
+header .contactBtn {
+  padding: 6px 40px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(127deg, #ff7042 36.5%, #ffa73f 78.55%);
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  /* 150% */
+  letter-spacing: -0.8px;
+}
+/*# sourceMappingURL=style.css.map */
