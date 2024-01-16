@@ -1,32 +1,102 @@
 ul {
-    list-style: none;
+  list-style: none;
 }
 a {
-    text-decoration: none;
-    color: unset;
+  text-decoration: none;
+  color: unset;
+}
+.orangeBtn {
+  padding: 6px 40px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(127deg, #ff7042 36.5%, #ffa73f 78.55%);
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.8px;
 }
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:10px 20px;
-    ul {
-        display: flex;
-        li {
-            margin: 5px;
-        }
+    li {
+      margin: 5px;
     }
-    .contactBtn {
-        padding: 6px 40px;
-        border: none;
-        border-radius: 12px;
-        background: linear-gradient(127deg, #ff7042 36.5%, #ffa73f 78.55%);
-        color: #fff;
-        text-align: center;
+  }
+}
+
+#banner {
+  .text {
+    background: linear-gradient(
+      164deg,
+      #ff8a00 9.49%,
+      rgba(255, 61, 0, 0.69) 97.63%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+#projects {
+  padding: 30px;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .card {
+      width: 40%;
+      margin: 20px;
+      padding: 23px;
+      border-radius: 8px;
+      border: 1px solid #ffba6d;
+
+      background: linear-gradient(
+        161deg,
+        rgba(255, 217, 171, 0.14) 15.55%,
+        rgba(255, 209, 154, 0.25) 96.59%
+      );
+
+      backdrop-filter: blur(12.5px);
+      h3 {
+        color: rgba(2, 7, 13, 0.9);
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: -1.2px;
+      }
+      p {
+        overflow: hidden;
+        color: rgba(4, 24, 47, 0.45);
+
+        text-overflow: ellipsis;
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 16px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 400;
         line-height: 24px; /* 150% */
-        letter-spacing: -0.8px;
+        letter-spacing: -0.32px;
+      }
+      .show-more {
+        display: flex;
+        justify-content: flex-end;
+        a {
+          color: #ff8a00;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 24px; /* 150% */
+          letter-spacing: -0.32px;
+        }
+      }
     }
+  }
 }

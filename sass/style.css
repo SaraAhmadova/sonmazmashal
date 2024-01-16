@@ -7,30 +7,7 @@ a {
   color: unset;
 }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 10px 20px;
-}
-
-header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-header ul li {
-  margin: 5px;
-}
-
-header .contactBtn {
+.orangeBtn {
   padding: 6px 40px;
   border: none;
   border-radius: 12px;
@@ -40,8 +17,77 @@ header .contactBtn {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 24px;
-  /* 150% */
+  line-height: 24px; /* 150% */
   letter-spacing: -0.8px;
 }
-/*# sourceMappingURL=style.css.map */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+header ul {
+  display: flex;
+}
+header ul li {
+  margin: 5px;
+}
+
+#banner .text {
+  background: linear-gradient(164deg, #ff8a00 9.49%, rgba(255, 61, 0, 0.69) 97.63%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#projects {
+  padding: 30px;
+}
+#projects .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#projects .container .card {
+  width: 40%;
+  margin: 20px;
+  padding: 23px;
+  border-radius: 8px;
+  border: 1px solid #ffba6d;
+  background: linear-gradient(161deg, rgba(255, 217, 171, 0.14) 15.55%, rgba(255, 209, 154, 0.25) 96.59%);
+  -webkit-backdrop-filter: blur(12.5px);
+          backdrop-filter: blur(12.5px);
+}
+#projects .container .card h3 {
+  color: rgba(2, 7, 13, 0.9);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -1.2px;
+}
+#projects .container .card p {
+  overflow: hidden;
+  color: rgba(4, 24, 47, 0.45);
+  text-overflow: ellipsis;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.32px;
+}
+#projects .container .card .show-more {
+  display: flex;
+  justify-content: flex-end;
+}
+#projects .container .card .show-more a {
+  color: #ff8a00;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.32px;
+}/*# sourceMappingURL=style.css.map */
