@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sonmaz Mashal</title>
+    <title>Sonmaz Mashall</title>
+    <link rel="stylesheet" href="/sass/oldStyle.css" />
     <link rel="stylesheet" href="/sass/style.css" />
   </head>
   <body>
     <header>
-      <img src="./img/logo.svg" alt="" />
       <nav>
+        <img src="./img/logo.svg" alt="" />
         <ul>
           <li><a href="#">Homepage</a></li>
           <li><a href="#Organization">Organization</a></li>
@@ -18,12 +19,494 @@
           <li><a href="#Contact">Contact</a></li>
           <li><a href="#About">About Us</a></li>
         </ul>
+        <button class="orangeBtn">Contact</button>
       </nav>
-      <button class="orangeBtn">Contact</button>
     </header>
     <main>
-      <section id="banner">Sonmaz Mashall</section>
-      <section id="projects">
+      <section id="banner">
+        <div class="container">
+          <h2>Sonmaz Mashall</h2>
+          <p>
+            Sonmaz Mashall Cultural Relations Public Union is a nonprofit,
+            cultural relations union dedicated to crossing boundaries and
+            increasing mutual understanding and cooperation between the
+            different nations through culture. The main goal of the union is to
+            promote the integration of our country to the global processes going
+            on in the world.
+          </p>
+          <div class="buttons">
+            <button class="explore-btn">Explore Now</button>
+            <button class="contact-btn">Contact</button>
+          </div>
+          <div class="more-details">
+            <a href="./projects.html" class="detail-item">
+              <div class="icon">📑</div>
+              <span>Projects</span>
+              <p>Explore Sonmaz Mashal’s projects and plans</p>
+            </a>
+            <div class="detail-item">
+              <img src="./img/bannerThumbnail.png" alt="" />
+            </div>
+            <a href="./projects.html" class="detail-item">
+              <div class="icon">📋</div>
+              <span>Organization</span>
+              <p>Explore Sonmaz Mashal’s organization schema</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="mission">
+        <div class="container">
+          <h2><span>Our</span> Mission</h2>
+          <div class="missions">
+            <div class="row">
+              <div class="col">
+                <div class="mission-item">
+                  <span>to Contribute </span>to broadening and strengthening
+                  friendship and mutual understanding between different nations
+                  and expand relations of Azerbaijan with the world countries by
+                  achieving recognition of its best art and culture samples in
+                  the international arena;
+                </div>
+                <div class="mission-item">
+                  <span>to Encourage</span> exchanges and cooperation in
+                  education of culture, social sciences, and other fields of
+                  intercultural endeavor, on the basis of mutual benefit, by
+                  providing opportunities for and facilitating appropriate
+                  contacts and activities between institutions, organizations
+                  and individuals;
+                </div>
+              </div>
+              <div class="col center">
+                <div class="mission-item">
+                  <img src="./img/missionBg.png" alt="" />
+                </div>
+              </div>
+              <div class="col">
+                <div class="mission-item">
+                  <span>to Promote</span> the communication on the emerging
+                  democratic changes in the civil society of Republic of
+                  Azerbaijan to the world community by increasing the
+                  international community awareness on the best examples of the
+                  Azerbaijani art and culture.
+                </div>
+                <div class="mission-item">
+                  <span>to Assist</span> the citizens to learn the modern
+                  democratic values through the appreciation of the best
+                  translation works and dissemination of the best examples of
+                  Azerbaijan literature into foreign languages and vice versa.
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="mission-item center">
+                <span>to Promote</span> the integration of the Republic of
+                Azerbaijan into global cultural arena by holding events,
+                classes, workshops and seminars of a cultural, educational and
+                informational nature, and organizing the exhibitions of the
+                world famous artists’ paintings in the Republic of Azerbaijan
+                and assisting the popularization of Azerbaijani artists’
+                paintings abroad;
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="publications">
+        <div class="container">
+          <h2><span>Our</span> Publications</h2>
+          <ul id="books-carousel">
+            <li>
+              <a href="http://sonmazmashal.com/fealiyyet/buta1.pdf">
+                <h6>Buta. Bakı seminarı - 2010</h6>
+                <img src="./img/books/1.jpg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="http://sonmazmashal.com/fealiyyet/BUTA-II.pdf">
+                <h6>
+                  Buta-II. Regionlardan olan qadın yazıçıların seminarı - 2012
+                </h6>
+                <img src="./img/books/2.jpg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="http://sonmazmashal.com/neshrlerimiz/AMERIKA.pdf">
+                <h6>Adi və qeyri-adi Amerika</h6>
+                <img src="./img/books/3.jpg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="http://sonmazmashal.com/neshrlerimiz/antology.pdf">
+                <h6>Azərbaycan Qadın şairlərinin poeziya antologiyası</h6>
+                <img src="./img/books/2017.jpg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="http://sonmazmashal.com/fealiyyet/Qadinlar.pdf">
+                <h6>
+                  Azərbaycan Qadını Yaradır-Yazarlarla Rəssamlar arasında
+                  ünsiyyət
+                </h6>
+                <img src="./img/books/IMG_8554_cropped.jpg" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="news">
+        <div class="news">
+          <h4>XƏBƏRLƏR</h4>
+
+          <ul id="slide2">
+            <li>
+              <a href="/xeber1.php">
+                <img
+                  src="http://sonmazmashal.com/layiheler/Xeberler%20renglerin%20seyyaheti.files/image001.jpg"
+                />
+                <h3>
+                  "Rənglərin səyahəti: Bakı-Budapeşt" layihəsinə yekun vurulub
+                </h3>
+                <p>
+                  “Sönməz Məşəl” Mədəni Əlaqələr İctimai Birliyi Azərbaycan
+                  Dillər Universitetinin İnformasiya Resurs Kompleksində
+                  Azərbaycan Respublikasının Prezidenti yanında Qeyri-Hökumət
+                  Təşkilatlarına Dövlət Dəstəyi Şurasının maliyyə yardımı ilə...
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="/xeber2.php">
+                <img
+                  src="http://sonmazmashal.com/layiheler/odlar%20yurdunun%20minbir%20rengi.htm.files/4.jpg"
+                />
+                <h3>Lüksemburqda həyata keçirilən layihəyə yekun vurulub</h3>
+                <p>
+                  “Sönməz Məşəl” Mədəni Əlaqələr İctimai Birliyi “Odlar yurdunun
+                  min bir rəngi...” adı altında reallaşdırdığı layihənin
+                  yekunlarına həsr edilmiş təqdimat mərasimi keçirilib.
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="/xeber3.php">
+                <h3>
+                  "Odlar yurdunun min bir rəngi adlı" mədəniyyət layihəsi həyata
+                  keçiriləcək
+                </h3>
+                <p>
+                  “Sönməz Məşəl” Mədəni Əlaqələr İctimai Birliyi iyunun 15-dən
+                  19-dək Lüksemburqdakı fəaliyyət göstərən “Qarabağ” Azərbaycan
+                  Mədəniyyət Assosiasiyasının və Azərbaycanın Luksemburq
+                  Krallığındakı səfirliyinin təşkilati dəstəyi ilə “Odlar
+                  yurdunun min bir rəngi” adlı mədəniyyət layihəsi həyata
+                  keçirəcək.
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="/xeber4.php">
+                <img
+                  src="http://sonmazmashal.com/layiheler/Metbuat%20uchun%20(2).files/image001.jpg"
+                />
+                <h3>
+                  "Qadın şairlərin poeziya antologiyası ingilis dilində nəşr
+                  edilib"
+                </h3>
+                <p>
+                  “Azərbaycan qadın şairlərinin poeziya antologiyası” kitabı
+                  ingilis dilində nəşr edilib.Kitaba Azərbaycan klassik
+                  şairlərinin əsərləri, XIX əsrin ikinci yarısında Bakıda
+                  başlanan neft “bumu”ndan sonra 1920-ci illərə qədər olan
+                  dövrdə yaranan...
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="/xeber5.php">
+                <img
+                  src="http://sonmazmashal.com/layiheler/qarabag%20rengleri.files/image002.gif"
+                />
+                <h3>"Qarabağ rəngləri Melburnda nümayiş olundu"</h3>
+                <p>
+                  “Sönməz Məşəl” Mədəni Əlaqələr İctimai Birliyi Azərbaycan
+                  Respublikasının Prezidenti yanında Qeyri-Hökumət
+                  Təşkilatlarına Dövlət Dəstəyi Şurasının maliyyə yardımı ilə
+                  “Rənglər çələngi: Azərbaycanın Dağlıq Qarabağ rəngləri
+                  Melburnda” adlı layihə həyata keçirir.
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="/xeber6.php">
+                <img
+                  src="http://sonmazmashal.com/layiheler/press%20release-Italya.files/image001.jpg"
+                />
+                <h3>"Nizami dünyasının rəngləri” layihəsi başa çatıb</h3>
+                <p>
+                  “Sönməz Məşəl” Mədəni Əlqələr İctimai Birliyi Azərbaycan
+                  Dillər Universitetinin Amerika Mərkəzində “Azərbaycan şairi
+                  Nizami dünyasının rəngləri (Romada Azərbaycan və İtaliya qadın
+                  rəssamlarının sərgisi)” layihəsinin başa çatması ilə əlaqədar
+                  təqdimat mərasimi keçirib.
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="xeber7.php">
+                <img
+                  src="http://sonmazmashal.com/layiheler/Xeber-az%20(1)ssss.files/image001.png"
+                />
+                <h3>Romada rəssamlarımızın sərgisinin rəsmi təqdimatı olub</h3>
+                <p>
+                  “Sönməz Məşəl” Mədəni Əlqələr İctimai Birliyi Azərbaycan
+                  Respublikasının Prezidenti yanında Qeyri-Hökumət
+                  Təşkilatlarına Dövlət Dəstəyi Şurasının, Azərbaycan
+                  parlamentinin Azərbaycan-İtaliya dostluq qrupunun və
+                  Azərbaycanın İtaliyadakı səfirliyinin dəstəyi ilə...
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="/xeber8.php">
+                <img
+                  src="http://sonmazmashal.com/layiheler/Press%20Release%20az.files/image001.jpg"
+                />
+                <h3>
+                  "Azərbaycan şairi Nizami dünyasının rəngləri" layihəsi həyata
+                  keçirilir
+                </h3>
+                <p>
+                  "Sönməz Məşəl" Mədəni Əlaqələr İctimai Birliyi "Azərbaycan
+                  şairi Nizami dünyasının rəngləri" layihəsini İtaliyada həyata
+                  keçirir.
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="/xeber9.php">
+                <h3>
+                  “Rənglərin dialoqu: Azərbaycan-Almaniya“ layihəsinin
+                  yekunlarına dair təqdimat keçirilib
+                </h3>
+                <p>
+                  2012-ci il dekabrın 15-də “Sönməz Məşəl” Mədəni Əlaqələr
+                  İctimai Birliyi Azərbaycan Dillər Universitetinin
+                  İnformasiya-Resurs Kompleksində “Rənglərin dialoqu:
+                  Azərbaycan-Almaniya“ layihəsinin yekunlarına həsr olunmuş
+                  təqdimat mərasimi keçirib.
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="/xeber10.php">
+                <img
+                  src="http://sonmazmashal.com/fealiyyet/111.files/image002.png"
+                />
+                <h3>
+                  “Regionlardakı yaradıcı qadınlar...” layihəsinə yekun vurulub
+                </h3>
+                <p>
+                  2012-ciil dekabrın 15-də “Sönməz Məşəl” Mədəni Əlaqələr
+                  İctimai Birliyi Azərbaycan Dillər Universitetinin
+                  İnformasiya-Resurs Kompleksində Açıq Cəmiyyət İnstitutu –
+                  Yardım Fondunun maliyyə dəstəyi ilə...
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="/xeber11.php">
+                <img
+                  src=" http://sonmazmashal.com/teskilat/teqdimat/DSC08139-small.JPG"
+                />
+                <h3>
+                  “Dünyamızı birlikdə rəngləyək” layihəsinin təqdimatı keçirilib
+                </h3>
+                <p>
+                  ADU Amerika Mərkəzində “Sönməz Məşəl” MƏİB həyata keçirdiyi
+                  “Dünyamızı birlikdə rəngləyək: Azərbaycanın Qarabağ rəngləri”
+                  layihəsinin yekunlarına həsr olunmuş təqdimat mərasimi
+                  keçirilib.
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="/xeber12.php">
+                <img
+                  src="http://sonmazmashal.com/teskilat/seminar/DSC01299-small.JPG"
+                />
+                <h3>“Sönməz Məşəl” qadın yazarlar üçün seminar keçirib</h3>
+                <p>
+                  İyunun 19-dan 22-dək ADU-nun İnformasiya-Resurs Kompleksinin
+                  Amerika Mərkəzində “Sönməz Məşəl” MƏİB qadın yazarlar üçün
+                  yaradıcı yazı üzrə seminarlar keçirib.
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="/xeber12.php">
+                <img
+                  src="http://sonmazmashal.com/teskilat/sergi/DSC02622-small.JPG"
+                />
+                <h3>
+                  ABŞ-da Azərbaycan və ABŞ rəssamlarının Qarabağ mövzusunda
+                  əsərlərindən ibarət sərgi keçirilib
+                </h3>
+                <p>
+                  ABŞ-ın Virciniya ştatının aparıcı ali təhsil ocaqlarından olan
+                  Corc Meyson Universitetinin İncəsənət Məktəbində Azərbaycan və
+                  Amerika rəssamlarının əsərlərindən ibarət...
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="/xeber12.pgp">
+                <img
+                  src="http://sonmazmashal.com/teskilat/sergi/P6070828-small.JPG"
+                />
+                <h3>«Sönməz Məşəl» MƏİB Amerikada sərgi keçirəcək</h3>
+                <p>
+                  “Sönməz Məşəl” MƏİB AR Prezidenti yanında QHT-lərə Dövlət
+                  Dəstəyi Şurasının, AR Diasporla İş üzrə Dövlət Komitəsinin və
+                  ADU-nun maliyyə dəstəyi ilə “Dünyamızı birlikdə rəngləyək:
+                  Azərbaycanın Dağlıq Qarabağ rəngləri” adlı layihəsini həyata
+                  keçirir.
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="/xeber16.php">
+                <img src="http://sonmazmashal.com/images/hemin.jpg" />
+                <h3>
+                  «Sönməz Məşəl» “Qadınlar yaradır” adlı layihənin icrasına
+                  başlanılıb
+                </h3>
+                <p>
+                  “Sönməz Məşəl” “Sönməz Məşəl” Mədəni Əlaqələr İctimai Birliyi
+                  UNESCO-nun maliyyə dəstəyi ilə “Qadınlar yaradır: Azərbaycanda
+                  gender bərabərliyi və qadınların uğurlarına dair yaradıcı
+                  söhbətlər” adlı layihənin icrasına başlayıb.
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="/xeber17.php">
+                <img src="http://sonmazmashal.com/images/m.jpg" />
+                <h3>«Sönməz Məşəl» Yaradıcı qadınların seminarı yekunlaşdı</h3>
+                <p>
+                  “Sönməz Məşəl” Azərbaycanın qadın rəssam və yazarlarının
+                  “Sevimli bala” MMC-nin 28 May küçəsində yerləşən “Talent
+                  studio”sunda təşkil olunan dörd günlük seminarları başa çatıb.
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="/xeber18.php">
+                <img src="http://sonmazmashal.com/images/uea7.jpg" />
+                <h3>«Sönməz Məşəl»Azərbaycanın rənglər dünyası Abu-Dabidə</h3>
+                <p>
+                  “Sönməz Məşəl”Oktyabrın 17-də Birləşmiş Ərəb Əmirliklərinin
+                  paytaxtında “Azərbaycanın rənglər dünyası Abu-Dabidə” adlı
+                  gənc qadın rəssamlarımızın əsərlərindən ibarət sərgi açılacaq.
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="/xeber19.php">
+                <img
+                  src="http://sonmazmashal.com/teskilat/sergi/sulhlaylasi.jpg"
+                />
+                <h3>
+                  «Sönməz Məşəl»Vaşinqtonda Xocalı soyqırımı qurbanlarına həsr
+                  edilən “Sülh laylayı” musiqili əsərinin premyerası olub
+                </h3>
+                <p>
+                  ABŞ Beynəlxalq Diplomatik Xidmət Əməkdaşları Assosiasiyası,
+                  Vaşınqton Beynəlxalq Piano İncəsənət Şurası, Azərbaycan Dillər
+                  Universiteti və “Sönməz Məşəl” Mədəni Əlaqələr İctimai
+                  Birliyinin birgə təşkilatçılığı ilə Xocalı soyqırımı
+                  qurbanlarının xatirəsinə həsr olunmuş “Sülh laylayı” adlı
+                  musiqili əsərin premyerası keçirilib.
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="/xeber20.php">
+                <img src="http://sonmazmashal.com/images/33.jpg" />
+                <h3>“Azərbaycan rənglərinin ahəngi” adlı sərginin təşkili</h3>
+                <p>
+                  “Sönməz Məşəl” Mədəni Əlaqələr İctimai Birliyi “Azərbaycan
+                  rənglərinin ahəngi” adlı Azərbaycanın gənc qadın rəssamlarının
+                  əsərlərindən ibarət sərginin təşkili etməyi planlaşdırır.
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="/xeber21.php">
+                <img src="http://sonmazmashal.com/images/11.jpg" />
+                <h3>
+                  “İmadəddin Nəsiminin 650 illiyinə həsr edilmiş “İki dünyanın
+                  şairi” adlı ədəbi-bədii gecə təşkil etmişdir.
+                </h3>
+                <p>
+                  “Sönməz Məşəl”Mədəni Əlaqələr İctimai Birliyi ADU-nun Xarici
+                  Ölkələr Ədəbiyyatı kafedrası, Bakı Amerika Mərkəzi və ABŞ-dakı
+                  Vaşinqton Piano İncəsənəti Şurasının əməkdaşlığı ilə birlikdə
+                  İmadəddin Nəsiminin 650 illiyinə həsr edilmiş “İki dünyanın
+                  şairi” adlı ədəbi-bədii gecə təşkil etmişdir.
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="/xeber22.php">
+                <img src="http://sonmazmashal.com/teskilat/sergi/koron.jpg" />
+                <h3>
+                  “Koronavirusla mübarizə mədəniyyəti: Kim, Harada, Necə?”
+                  mövzusunda videokonfrans"
+                </h3>
+                <p>
+                  Sönməz Məşəl Mədəni Əlaqələr İctimai Birliyinin təşkilatçılğı
+                  ilə Azərbaycan Respublikasının Prezidenti yanında
+                  Qeyri-Hökumət Təşkilatlarına Dövlət Dəstəyi Şurasının Real TV
+                  ilə birgə keçirdiyi "Evdə qalaq, bilgi alaq!” kampaniyası
+                  çərçivəsində “Koronavirusla mübarizə mədəniyyəti: Kim, Harada,
+                  Necə?” mövzusunda videokonfrans keçirilib.
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="/xeber23.php">
+                <img src="http://sonmazmashal.com/images/shekil1.jpg" />
+                <h3>“Dünyanı heyrətləndirən musiqi”</h3>
+                <p>
+                  “Sönməz Məşəl” Mədəni Əlaqələr İctimai Birliyi Azərbaycan
+                  Respublikasının Prezidenti yanında Qeyri-Hökumət
+                  Təşkilatlarına Dövlət Dəstəyi Şurasının və Azərbaycan
+                  Respublikası Mədəniyyət Nazirliyinin birgə maliyyə dəstəyi ilə
+                  “Dünyanı heyrətləndirən musiqi” adlı layihə həyata keçirib.
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="/xeber24.php">
+                <img src="http://sonmazmashal.com/images/photo12.jpg" />
+                <h3>
+                  “Şuşanın dağları başı dumanlı” filmi Varşavada nümayiş olunub”
+                </h3>
+                <p>
+                  Polşanın paytaxtında Varşava Universitetinin Şərqşünaslıq
+                  fakültəsi Azərbaycan, Türkiyə və Qazaxstanın Polşadakı
+                  səfirlikləri, habelə Beynəlxalq Türk Mədəniyyəti və İrsi Fondu
+                  ilə birlikdə “Polşa və türk dünyası” mövzusunda beynəlxalq
+                  konfrans keçirib.
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- <section id="projects">
+        <h2>Our Projects</h2>
         <div class="container">
           <div class="card">
             <h3>Literature Program For The Garadag School District</h3>
@@ -80,8 +563,13 @@
           </div>
           <button class="orangeBtn">Show More</button>
         </div>
-      </section>
+      </section> -->
     </main>
     <footer></footer>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery.slides.min.js"></script>
+    <script src="./js/jquery.fancybox.pack.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
