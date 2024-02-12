@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sonmaz Mashall</title>
-    <link rel="stylesheet" href="/sass/oldStyle.css" />
     <link rel="stylesheet" href="/sass/style.css" />
   </head>
   <body>
-    <header>
+    <header class="sticky-navbar">
       <nav>
         <img src="./img/logo.svg" alt="" />
         <ul>
@@ -19,7 +18,10 @@
           <li><a href="#Contact">Contact</a></li>
           <li><a href="#About">About Us</a></li>
         </ul>
+       <div class="buttons">
         <button class="orangeBtn">Contact</button>
+        <a href="#" class="lang"><img src="./img/azerbaijan.png" alt=""></a>
+       </div>
       </nav>
     </header>
     <main>
@@ -115,46 +117,147 @@
       <section id="publications">
         <div class="container">
           <h2><span>Our</span> Publications</h2>
-          <ul id="books-carousel">
-            <li>
-              <a href="http://sonmazmashal.com/fealiyyet/buta1.pdf">
-                <h6>Buta. Bakı seminarı - 2010</h6>
-                <img src="./img/books/1.jpg" alt="" />
-              </a>
-            </li>
-            <li>
-              <a href="http://sonmazmashal.com/fealiyyet/BUTA-II.pdf">
-                <h6>
-                  Buta-II. Regionlardan olan qadın yazıçıların seminarı - 2012
-                </h6>
-                <img src="./img/books/2.jpg" alt="" />
-              </a>
-            </li>
-            <li>
+          <ul id="books">
+            <div class="otherBooks">
+              <li>
+                <a href="http://sonmazmashal.com/fealiyyet/buta1.pdf">
+                  <h6>Buta. Bakı seminarı - 2010</h6>
+                  <img src="./img/books/1.jpg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="http://sonmazmashal.com/fealiyyet/BUTA-II.pdf">
+                  <h6>
+                    Buta-II. Regionlardan olan qadın yazıçıların seminarı - 2012
+                  </h6>
+                  <img src="./img/books/2.jpg" alt="" />
+                </a>
+              </li>
+            </div>
+            <li class="activeBook">
               <a href="http://sonmazmashal.com/neshrlerimiz/AMERIKA.pdf">
                 <h6>Adi və qeyri-adi Amerika</h6>
                 <img src="./img/books/3.jpg" alt="" />
               </a>
             </li>
-            <li>
-              <a href="http://sonmazmashal.com/neshrlerimiz/antology.pdf">
-                <h6>Azərbaycan Qadın şairlərinin poeziya antologiyası</h6>
-                <img src="./img/books/2017.jpg" alt="" />
-              </a>
-            </li>
-            <li>
-              <a href="http://sonmazmashal.com/fealiyyet/Qadinlar.pdf">
-                <h6>
-                  Azərbaycan Qadını Yaradır-Yazarlarla Rəssamlar arasında
-                  ünsiyyət
-                </h6>
-                <img src="./img/books/IMG_8554_cropped.jpg" alt="" />
-              </a>
-            </li>
+            <div class="otherBooks">
+              <li>
+                <a href="http://sonmazmashal.com/neshrlerimiz/antology.pdf">
+                  <h6>Azərbaycan Qadın şairlərinin poeziya antologiyası</h6>
+                  <img src="./img/books/2017.jpg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="http://sonmazmashal.com/fealiyyet/Qadinlar.pdf">
+                  <h6>
+                    Azərbaycan Qadını Yaradır-Yazarlarla Rəssamlar arasında
+                    ünsiyyət
+                  </h6>
+                  <img src="./img/books/IMG_8554_cropped.jpg" alt="" />
+                </a>
+              </li>
+            </div>
           </ul>
         </div>
       </section>
-      <section id="news">
+      <section id="latest-news">
+        <div class="container">
+          <h2><span>Latest</span> News</h2>
+          <div class="news-block">
+            <div class="side-block">
+              <a href="/xeber1.php" class="news-item">
+                <div class="img-box">
+                  <img
+                    src="http://sonmazmashal.com/layiheler/Xeberler%20renglerin%20seyyaheti.files/image001.jpg"
+                    alt=""
+                  />
+                </div>
+                <h3>
+                  “The Colours of Nizami’s World” Project Has Successfully been
+                  fulfilled.
+                </h3>
+                <p>
+                  “Khojaly kids will never grow up.” The opening line of the
+                  poem by Azerbaijani poet Yusif Savalan and set to music by
+                  composer Haskell Small in the “Lullaby for Peace,” captured
+                  the essential message of the morning concert held at the Arts
+                  Club of Washington.
+                </p>
+              </a>
+              <hr class="divider" />
+              <a href="/xeber2.php" class="news-item">
+                <h3>
+                  “The Colours of Nizami’s World” Project Has Successfully been
+                  fulfilled.
+                </h3>
+                <p>
+                  “Khojaly kids will never grow up.” The opening line of the
+                  poem by Azerbaijani poet Yusif Savalan and set to music by
+                  composer Haskell Small in the “Lullaby for Peace,” captured
+                  the essential message of the morning concert held at the Arts
+                  Club of Washington.
+                </p>
+              </a>
+            </div>
+            <div class="center-block">
+              <a href="/xeber1.php" class="news-item">
+                <div class="img-box">
+                  <img
+                    src="http://sonmazmashal.com/teskilat/sergi/sulhlaylasi.jpg"
+                    alt=""
+                  />
+                </div>
+                <h3>
+                  «Sönməz Məşəl»Vaşinqtonda Xocalı soyqırımı qurbanlarına həsr
+                  edilən “Sülh laylayı” musiqili əsərinin premyerası olub
+                </h3>
+                <p>
+                  ABŞ Beynəlxalq Diplomatik Xidmət Əməkdaşları Assosiasiyası,
+                  Vaşınqton Beynəlxalq Piano İncəsənət Şurası, Azərbaycan Dillər
+                  Universiteti və “Sönməz Məşəl” Mədəni Əlaqələr İctimai
+                  Birliyinin birgə təşkilatçılığı ilə Xocalı soyqırımı
+                  qurbanlarının xatirəsinə həsr olunmuş “Sülh laylayı” adlı
+                  musiqili əsərin premyerası keçirilib.
+                </p>
+              </a>
+            </div>
+            <div class="side-block">
+              <a href="/xeber1.php" class="news-item">
+                <div class="img-box">
+                  <img
+                    src="http://sonmazmashal.com/layiheler/Xeberler%20renglerin%20seyyaheti.files/image001.jpg"
+                    alt=""
+                  />
+                </div>
+                <h3>
+                  "Sonmaz Mashal" Cultural Relations Public Union is planning to
+                  organize an art exhibition under the name of "The Colours of
+                  Nizami's World" in Rome
+                </h3>
+                <p>
+                  "Sonmaz Mashal" Cultural Relations Public Union is planning to
+                  organize...
+                </p>
+              </a>
+              <hr class="divider" />
+              <a href="/xeber2.php" class="news-item">
+                <h3>
+                  “The Colours of Nizami’s World” Project Has Successfully been
+                  fulfilled.
+                </h3>
+                <p>
+                  “Khojaly kids will never grow up.” The opening line of the
+                  poem by Azerbaijani poet Yusif Savalan and set to music by
+                  composer Haskell Small in the “Lullaby for Peace,” captured
+                  the essential message of the morning concert held at the Arts
+                  Club of Washington.
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section id="news">
         <div class="news">
           <h4>XƏBƏRLƏR</h4>
 
@@ -504,7 +607,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- <section id="projects">
         <h2>Our Projects</h2>
         <div class="container">
@@ -565,11 +668,50 @@
         </div>
       </section> -->
     </main>
-    <footer></footer>
+    <footer>
+      <div class="container">
+        <div>
+          <a href="#"><img src="./img/footerLogo.png" alt="" /></a>
+          <p>
+            Sonmaz Mashall Cultural Relations Public Union is a non-profit
+            organization that brings together members based on shared interests,
+            guided by principles of free will and equality, with no profit
+            motive.
+          </p>
+        </div>
+        <div>
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Organization</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Membership</a></li>
+            <li><a href="#">News</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow Us</h4>
+
+          <a href="#"><img src="./img/icons/facebook.svg" alt="" /></a>
+          <a href="#"><img src="./img/icons/twitter.svg" alt="" /></a>
+          <a href="#"><img src="./img/icons/linkedin.svg" alt="" /></a>
+          <a href="#"><img src="./img/icons/youtube.svg" alt="" /></a>
+          <a href="#"><img src="./img/icons/instagram.svg" alt="" /></a>
+        </div>
+      </div>
+      <hr class="divider" />
+      <p class="copyright">2024 Sonmaz Mashal. All rights reserved</p>
+    </footer>
     <script src="./js/jquery.js"></script>
     <script src="./js/jquery.slides.min.js"></script>
     <script src="./js/jquery.fancybox.pack.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
-    <script src="./js/main.js"></script>
+    <!-- <script src="./js/main.js"></script> -->
   </body>
 </html>
