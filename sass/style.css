@@ -57,6 +57,7 @@ header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: none;
 }
 
 header nav ul li {

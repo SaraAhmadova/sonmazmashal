@@ -1,0 +1,265 @@
+@media (max-width: 500px) {
+    body {
+        .container {
+            h2 {
+                margin: 20px 0;
+                font-size: 40px;
+                line-height: 48px;
+            }
+        }
+    }
+    header {
+        padding: 5px;
+        nav {
+            width: 100%;
+            .menu-btn {
+                background: none;
+                border: none;
+            }
+            ul {
+                display: none;
+                &.show-menu {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            .buttons {
+                display: flex;
+
+                .orangeBtn {
+                    display: none;
+                }
+                .lang {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        width: 30px;
+                        margin-left: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    #banner {
+        .container {
+            h2 {
+                font-size: 48px;
+
+                &::after {
+                    right: 40px;
+                }
+            }
+            .buttons {
+                button {
+                    width: 180px;
+                }
+            }
+            .more-details {
+                flex-direction: column;
+            }
+        }
+    }
+    #mission {
+        .missions {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .row {
+                display: flex;
+                flex-direction: column;
+                .col.center {
+                    position: absolute;
+                    z-index: -3;
+                    opacity: 0.4;
+                }
+            }
+            .mission-item {
+                max-width: 854px;
+                color: #545351bf;
+                font-size: 16px;
+                line-height: 24px;
+                margin: 0;
+                padding: 10px;
+                &.center {
+                    text-align: left;
+                }
+                span {
+                    color: #ff8a00;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 500;
+                }
+                img {
+                    width: 120%;
+                }
+            }
+        }
+    }
+
+    #publications {
+        margin-bottom: 10px;
+        .container {
+            max-width: 100%;
+            ul {
+                flex-direction: column;
+
+                .otherBooks {
+                    align-items: center;
+                    flex-direction: column;
+                }
+            }
+
+            li {
+                margin-right: 0;
+                margin-bottom: 30px;
+                h6 {
+                    margin-bottom: 15px;
+                }
+                &.activeBook {
+                    width: 190px !important;
+                    &::after {
+                        content: none;
+                    }
+                }
+            }
+        }
+
+        .owl-stage {
+            display: flex;
+
+            div.owl-item {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                img {
+                    width: 130px;
+                    height: 170px;
+                }
+                &.activeBook {
+                    img {
+                        width: 350px !important;
+                        height: auto;
+                    }
+                }
+            }
+        }
+
+        h6 {
+            font-size: 14px;
+            margin-top: -2px;
+            text-align: center;
+        }
+    }
+
+    #latest-news {
+        padding-top: 30px;
+        .container {
+            .news-block {
+                flex-direction: column;
+                .center-block {
+                    width: 344px;
+                    .img-box {
+                        height: 336px;
+                    }
+                }
+            }
+        }
+    }
+
+    #projects {
+        padding: 30px;
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 48px;
+            font-weight: 600;
+            background: linear-gradient(164deg, #ff8a00 9.49%, rgba(255, 61, 0, 0.69) 97.63%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .card {
+                width: 40%;
+                margin: 20px;
+                padding: 23px;
+                border-radius: 8px;
+                border: 1px solid #ffba6d;
+
+                background: linear-gradient(161deg, rgba(255, 217, 171, 0.14) 15.55%, rgba(255, 209, 154, 0.25) 96.59%);
+
+                backdrop-filter: blur(12.5px);
+                h3 {
+                    color: rgba(2, 7, 13, 0.9);
+
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 500;
+                    letter-spacing: -1.2px;
+                }
+                p {
+                    overflow: hidden;
+                    color: rgba(4, 24, 47, 0.45);
+
+                    text-overflow: ellipsis;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px; /* 150% */
+                    letter-spacing: -0.32px;
+                }
+                .show-more {
+                    display: flex;
+                    justify-content: flex-end;
+                    a {
+                        color: #ff8a00;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 24px; /* 150% */
+                        letter-spacing: -0.32px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        padding-top: 100px;
+        .container {
+            flex-direction: column;
+            & > div {
+                width: 100%;
+                &:first-child {
+                    width: 90%;
+                }
+                &.menu {
+                    width: 45%;
+                    flex-grow: 0.5;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    #publications{
+        ul{
+            li{
+               flex-direction: column;
+                &.activeBook{
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+}

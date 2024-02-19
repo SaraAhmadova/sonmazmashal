@@ -39,6 +39,7 @@ header {
     margin: auto;
     ul {
       display: flex;
+      display: none;
       li {
         margin: 5px;
         a {
@@ -53,12 +54,12 @@ header {
         }
       }
     }
-    .buttons{
+    .buttons {
       display: flex;
-      .lang{
+      .lang {
         display: flex;
         align-items: center;
-        img{
+        img {
           width: 30px;
           margin-left: 14px;
         }
@@ -88,6 +89,7 @@ body {
       }
     }
   }
+ 
 }
 #banner {
   padding: 80px 0;
