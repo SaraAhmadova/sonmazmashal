@@ -1,4 +1,21 @@
-@media (max-width: 500px) {
+@media screen and (min-width: 1201px) {
+  header {
+    padding: 5px;
+  }
+  header nav {
+    width: 100%;
+  }
+  header nav .menu-btn {
+    display: none;
+  }
+  header nav ul {
+    display: flex;
+  }
+  header nav .buttons .orangeBtn {
+    display: inline-block;
+  }
+}
+@media (max-width: 1200px) {
   body .container h2 {
     margin: 20px 0;
     font-size: 40px;
@@ -18,29 +35,19 @@
     display: none;
   }
   header nav ul.show-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   header nav .buttons {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   header nav .buttons .orangeBtn {
     display: none;
   }
   header nav .buttons .lang {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
+    margin-right: 15px;
   }
   header nav .buttons .lang img {
     width: 30px;
@@ -50,37 +57,23 @@
     font-size: 48px;
   }
   #banner .container h2::after {
-    right: 40px;
+    top: -20px;
+    right: -30px;
   }
   #banner .container .buttons button {
     width: 180px;
   }
   #banner .container .more-details {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   #mission .missions {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   #mission .missions .row {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   #mission .missions .row .col.center {
     position: absolute;
@@ -89,7 +82,7 @@
   }
   #mission .missions .mission-item {
     max-width: 854px;
-    color: #545351bf;
+    color: rgba(84, 83, 81, 0.7490196078);
     font-size: 16px;
     line-height: 24px;
     margin: 0;
@@ -114,49 +107,33 @@
     max-width: 100%;
   }
   #publications .container ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
-  #publications .container ul .otherBooks {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #publications .container li {
+  #publications .container ul li {
+    flex-direction: column;
     margin-right: 0;
     margin-bottom: 30px;
   }
-  #publications .container li h6 {
+  #publications .container ul li h6 {
     margin-bottom: 15px;
   }
-  #publications .container li.activeBook {
+  #publications .container ul li.activeBook {
     width: 190px !important;
   }
-  #publications .container li.activeBook::after {
-    content: none;
+  #publications .container ul li.activeBook::after {
+    display: none;
+  }
+  #publications .container ul .otherBooks {
+    align-items: center;
+    flex-direction: column;
   }
   #publications .owl-stage {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   #publications .owl-stage div.owl-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
   }
   #publications .owl-stage div.owl-item img {
     width: 130px;
@@ -175,10 +152,8 @@
     padding-top: 30px;
   }
   #latest-news .container .news-block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
+    align-items: center;
   }
   #latest-news .container .news-block .center-block {
     width: 344px;
@@ -200,14 +175,9 @@
     text-align: center;
   }
   #projects .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   #projects .container .card {
     width: 40%;
@@ -235,17 +205,12 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
-    /* 150% */
+    line-height: 24px; /* 150% */
     letter-spacing: -0.32px;
   }
   #projects .container .card .show-more {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-end;
   }
   #projects .container .card .show-more a {
     color: #ff8a00;
@@ -253,42 +218,27 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 24px;
-    /* 150% */
+    line-height: 24px; /* 150% */
     letter-spacing: -0.32px;
   }
   footer {
     padding-top: 100px;
   }
   footer .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   footer .container > div {
-    width: 100%;
+    width: 80%;
   }
   footer .container > div:first-child {
     width: 90%;
   }
   footer .container > div.menu {
     width: 45%;
-    -webkit-box-flex: 0.5;
-        -ms-flex-positive: 0.5;
-            flex-grow: 0.5;
   }
 }
-
-@media screen and (max-width: 1200px) {
-  #publications ul li {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+@media screen and (max-width: 376px) {
+  #banner .container h2::after {
+    right: 10px;
   }
-  #publications ul li.activeBook::after {
-    display: none;
-  }
-}
-/*# sourceMappingURL=media-style.css.map */
+}/*# sourceMappingURL=media-style.css.map */
