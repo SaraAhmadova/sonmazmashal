@@ -28,6 +28,7 @@ header {
   padding: 10px;
   width: 100%;
   &.sticky-navbar {
+    position: fixed;
     background-image: linear-gradient(167deg, #fff7ed 9.35%, #ffe8cb 90.7%);
     box-shadow: 5px 3px 14px 2px #ebe2d8b8;
   }
@@ -46,7 +47,7 @@ header {
           color: #5c5041;
           font-family: Arial, Helvetica, sans-serif;
           font-size: 14px;
-          padding: 24px;
+          padding: 0px;
           margin: 8px;
           font-style: normal;
           font-weight: 400;
@@ -69,10 +70,12 @@ header {
 }
 body {
   margin: 0;
-  // background-image: linear-gradient(167deg, #ffae4c36 9.35%, #ffae4c0d 90.7%);
   scroll-behavior: smooth;
   * {
     font-family: Arial, Helvetica, sans-serif;
+  }
+  section {
+    overflow: hidden;
   }
   .container {
     max-width: 1240px;
@@ -89,11 +92,10 @@ body {
       }
     }
   }
- 
 }
 #banner {
   padding: 80px 0;
-  background-image: url("../img/bannerBg.png");
+  background-image: url(../images/bannerBg.png);
   background-size: cover;
   .container {
     display: flex;
@@ -121,7 +123,7 @@ body {
         height: 50px;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(../img/titleIndex.svg);
+        background-image: url(../images/titleIndex.svg);
       }
     }
     p {
@@ -303,7 +305,7 @@ body {
         position: relative;
         overflow: unset;
         &::after {
-          content: url(../img/bookHandler.png);
+          content: url(../images/bookHandler.png);
           position: absolute;
           z-index: -2;
           bottom: -200px;
@@ -457,9 +459,10 @@ footer {
   padding-top: 500px;
   padding-bottom: 50px;
   width: 100%;
-  background-image: url(../img/footerBg.png);
+  background-image: url(../images/footerBg.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   .container {
     display: flex;
     align-items: flex-start;
