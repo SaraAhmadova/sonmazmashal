@@ -37,10 +37,6 @@
       }
       ul {
         display: none;
-        &.show-menu {
-          display: flex;
-          flex-direction: column;
-        }
       }
       .buttons {
         display: flex;
@@ -56,6 +52,12 @@
             width: 30px;
             margin-left: 14px;
           }
+        }
+      }
+      &.show-menu {
+        ul {
+          display: flex;
+          flex-direction: column;
         }
       }
     }
@@ -276,7 +278,6 @@
       }
     }
   }
-  
 }
 
 @media screen and (max-width: 376px) {

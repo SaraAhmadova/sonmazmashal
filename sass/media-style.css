@@ -34,10 +34,6 @@
   header nav ul {
     display: none;
   }
-  header nav ul.show-menu {
-    display: flex;
-    flex-direction: column;
-  }
   header nav .buttons {
     display: flex;
   }
@@ -52,6 +48,10 @@
   header nav .buttons .lang img {
     width: 30px;
     margin-left: 14px;
+  }
+  header nav.show-menu ul {
+    display: flex;
+    flex-direction: column;
   }
   #banner .container h2 {
     font-size: 48px;
