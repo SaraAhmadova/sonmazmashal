@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sonmaz Mashal</title>
-    <link rel="stylesheet" href="/sass/style.css" />
+    <title>Sonmaz Mashall</title>
+    <link rel="stylesheet" href="/sass/style-v2.css" />
+    <link rel="stylesheet" href="/sass/media-style.css" />
   </head>
   <body>
     <header>
-      <img src="./img/logo.svg" alt="" />
-      <nav>
+      <nav id="menu">
+        <button class="menu-btn" id="menu-btn">
+          <img src="images//menuIcon.svg" alt="" />
+        </button>
+        <img src="images//logo.svg" alt="" />
         <ul>
           <li><a href="#">Homepage</a></li>
           <li><a href="#Organization">Organization</a></li>
@@ -18,76 +22,757 @@
           <li><a href="#Contact">Contact</a></li>
           <li><a href="#About">About Us</a></li>
         </ul>
+        <div class="buttons">
+          <a href="#" class="orangeBtn">Contact</a>
+          <a href="#" class="lang"
+            ><img src="images//azerbaijan.png" alt=""
+          /></a>
+        </div>
       </nav>
-      <button class="contactBtn">Contact</button>
     </header>
     <main>
       <section id="projects">
-        <div class="container">
-          <div class="card">
-            <h3>Literature Program For The Garadagh School District</h3>
-            <p>
-              The project was implemented to provide school libraries and
-              teachers of Garadag School District with educational and general
-              reading materials written in the English language.
-            </p>
-            <div class="show-more">
-                <a href="layiheler/edebiyyat_programi.php">See Details  ></a>
+        <h2>Bizim layihələr</h2>
+
+        <div class="bgImg">
+          <div class="container" id="cardsContainer">
+            <div class="card">
+              <h3>“Ədəbiyyat” proqramı</h3>
+              <div class="content">
+                <p>
+                  “Ədəbiyyat” proqramı ingilis dilində yazılmış kitabların
+                  seçilərək, sadələşdirilmiş formada yenidən çap olunaraq
+                  Qaradağ rayonunda yerləşən məktəblərin kitabxanalarına
+                  paylanmasına yönəldilmişdir.  
+                </p>
+                <div class="project-info">
+                  <div class="box">
+                    <p>Layihə müddəti:</p>
+                    <span>15 iyul 2004-cü il - 15 oktyabr 2004-cü il</span>
+                  </div>
+                  <div class="box">
+                    <p>Maliyyə dəstəyi:</p>
+                    <span
+                      >Azərbaycan Beynəlxalq Əməliyyat Şirkətinin Səngəçal
+                      Terminalı Genişləndirmə Proqramı</span
+                    >
+                  </div>
+                </div>
+                <div class="show-more">
+                  <a href="layiheler/edebiyyat_programi.php">Ətraflı oxu</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h3>“Ədəbiyyat Proqramının Genişləndirilməsi”</h3>
+              <div class="content">
+                <p>
+                  “Sönməz Məşəl” MƏİB Qaradağ məktəblərinin müəllimləri arasında
+                  sorğu apararkən məlum olmuşdur ki, məktəblərdə əlavə oxu üçün
+                  tədris materialı çatışmır. Məktəb kitabxanalarının isə bu
+                  çatışmazlığı aradan qaldırmaq üçün malliyyə imkanı yoxdur.
+                </p>
+                <div class="project-info">
+                  <div class="box">
+                    <p>Layihə müddəti:</p>
+                    <span>19 sentyabr 2005-ci il – 25 dekabr 2005-ci il.</span>
+                  </div>
+                  <div class="box">
+                    <p>Maliyyə dəstəyi:</p>
+                    <span
+                      >Azərbaycan Beynəlxalq Əməliyyat Şirkətinin Səngəçal
+                      Terminalı Genişləndirmə Pr</span
+                    >
+                  </div>
+                </div>
+
+                <div class="show-more">
+                  <a href="layiheler/edebiyyat_programinin_genis.php"
+                    >Ətraflı oxu</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h3>
+                «Azərbaycan dilinin xəzinəsi: Azərbaycan dilinin inkişafı və
+                kodlaşdırılması məqsədilə məlumat bazasının yaradılması»
+              </h3>
+              <div class="content">
+                <p>
+                  Bu layihənin həyata keçirilməsi ideyası YUNESKO-nun «Tərcümə,
+                  Şərhetmə və Terminologiya Yeni Qlobal Kontekstdə» və «Tərcümə
+                  və Transmilli Proseslər» mövzusunda 1999 və 2005-ci illərdə
+                  Bakıda keçirdiyi beynəlxalq konfraslardan sonra meydana
+                </p>
+                <div class="project-info">
+                  <div class="box">
+                    <p>Layihə müddəti:</p>
+                    <span>1 dekabr 2007 - 31 mart 2008-ci il</span>
+                  </div>
+                  <div class="box">
+                    <p>Maliyyə dəstəyi:</p>
+                    <span
+                      >YUNESKO üzrə Azərbaycan Milli Komissiyasının təqdimatı
+                      ilə YUNESKO</span
+                    >
+                  </div>
+                </div>
+                <div class="show-more">
+                  <a href="layiheler/bazanin_layihesi.php">Ətraflı oxu</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h3>
+                «Azərbaycan dilinin inkişafı və kodlaşdırılması məqsədilə
+                elektron məlumat bazasının genişləndirilməsi
+              </h3>
+              <div class="content">
+                <p>
+                  “Sönməz Məşəl” Mədəni Əlaqələr İctimai Birliyi YUNESKO və
+                  Azərbaycan Dillər Universitetinin maliyyə dəstəyi ilə 1 dekabr
+                  2007 - 31 mart 2008-ci il tarixlərdə “Azərbaycan dilinin
+                  xəzinəsi: Azərbaycan dilinin inkişafı və kodlaşdırılması
+                  məqsədilə məlumat bazasının yaradılması” layihəsini həyata
+                  keçirmiş, bu layihə çərçivəsində «Azərbaycan dilinin xəzinəsi”
+                  vebsaytını yaratmışdı
+                </p>
+                <div class="project-info">
+                  <div class="box">
+                    <p>Layihə müddəti:</p>
+                    <span>1 may 2009 – 31 avqust 2009</span>
+                  </div>
+                  <div class="box">
+                    <p>Maliyyə dəstəyi:</p>
+                    <span
+                      >Azərbaycan Respublikası Prezidenti yanında Qeyri-Hökumət
+                      Təşkilatlarına Dövlət Dəstəyi Şurası</span
+                    >
+                  </div>
+                </div>
+                <div class="show-more">
+                  <a href="layiheler/bazanin_layihesi_genis.php">Ətraflı oxu</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h3>«Qadınlar, Ədəbiyyat və Cəmiyyət» layihəsi</h3>
+              <div class="content">
+                <p>
+                  Azərbaycanın çox zəngin regional ictimai və siyasi cəhətdən
+                  dəyərli ədəbiyyat ənənələri vardır ki, qadınlar da onların
+                  yaranmasında iştirak etmişlər. Müstəqillik əldə olunandan
+                  bəri, iqtisadi, siyasi və ictimai dəyişikliklər ədəbi mühitdə
+                  xüsusilə qadınlar üçün mürəkkəb vəziyyətin yaranmasına səbəb
+                  olmuşdur. Ədəbiyyat xalqın və cəmiyyətin güzgüsü rolunu
+                  oyanaya bilir.
+                </p>
+                <div class="project-info">
+                  <div class="box">
+                    <p>Layihə müddəti:</p>
+                    <span>1 aprel 2010 – 31 oktyabr 2010</span>
+                  </div>
+                  <div class="box">
+                    <p>Maliyyə dəstəyi:</p>
+                    <span>Açıq Cəmiyyət İnstitutu - Yardım Fondu</span>
+                  </div>
+                </div>
+                <div class="show-more">
+                  <a href="layiheler/qadin_edeb_cemiyyet.php">Ətraflı oxu</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h3>
+                “Dünyamızı birlikdə rəngləyək: Azərbaycanın Dağlıq Qarabağ
+                rəngləri”
+              </h3>
+              <div class="content">
+                <p>
+                  Layihə çərçivəsində Amerika Birləşmiş Ştatlarının Corc Meyson
+                  Universitetində Azərbaycan və Amerika qadın rəssamlarının
+                  sərgisi təşkil olunmuş, bu sərgidə daha çox Dağlıq Qarabağ
+                  mövzusu işıqlandırılmışdır.
+                </p>
+                <div class="project-info">
+                  <div class="box">
+                    <p>Layihə müddəti:</p>
+                    <span>1 aprel 2012 – 31 iyul 2012 </span>
+                  </div>
+                  <div class="box">
+                    <p>Maliyyə dəstəyi:</p>
+                    <span
+                      >Azərbaycan Respublikası Prezidenti yanında Qeyri-Hökumət
+                      Təşkilatlarına Dövlət Dəstəyi Şurası, Diasprla İş üzrə
+                      Dövlət Komitəsi və Azərbaycan Dillər Universiteti</span
+                    >
+                  </div>
+                </div>
+                <div class="show-more">
+                  <a href="layiheler/dunya_reng.php">Ətraflı oxu</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h3>«Qadınlar, Ədəbiyyat və Cəmiyyət» layihəsi</h3>
+              <div class="content">
+                <p>
+                  “Sönməz Məşəl” Mədəni İctimai Birliyi Azərbaycan ədəbi
+                  mühitinin inkişafına və gender məsələlərinin bədii
+                  tədqiqatının təşkilinə dəstək məqsədiylə 2010-cu il aprelin
+                  1-dən oktyabrın 31-dək Amerika, Türkiyə və Azərbaycandan olan
+                </p>
+                <div class="project-info">
+                  <div class="box">
+                    <p>Layihə müddəti:</p>
+                    <span>1 aprel 2012 – 30 noyabr 2012 </span>
+                  </div>
+                  <div class="box">
+                    <p>Maliyyə dəstəyi:</p>
+                    <span
+                      >Açıq Cəmiyyət İnstitutu - Yardım Fondu, Azərbaycan Dillər
+                      Universiteti</span
+                    >
+                  </div>
+                </div>
+                <div class="show-more">
+                  <a href="layiheler/qadin_edeb_cemiyyet_genis.php"
+                    >Ətraflı oxu</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h3>«Rənglərin dialoqu: Azərbaycan – Almaniya» layihəsi</h3>
+              <div class="content">
+                <p>
+                  “Sönməz Məşəl” Mədəni Əlaqələr İctimai Birliyi Avropa
+                  Azərbaycanlıları Konqresi ilə birlikdə 2012-ci il noyabrın
+                  23-dən dekabrın 1-dək Berlindəki Direktorenhaus İncəsənət
+                  Qalareyasında “Rənglərin dialoqu:
+                </p>
+                <div class="project-info">
+                  <div class="box">
+                    <p>Layihə müddəti:</p>
+                    <span>1 noyabr 2012 - 15 dekabr 2012 </span>
+                  </div>
+                  <div class="box">
+                    <p>Maliyyə dəstəyi:</p>
+                    <span
+                      >Azərbaycan Respublikasının Diasporla İş üzrə Dövlət
+                      Komitəsi</span
+                    >
+                  </div>
+                </div>
+                <div class="show-more">
+                  <a href="layiheler/reng_dialoq.php">Ətraflı oxu</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h3>
+                «Azərbaycan şairi Nizami dünyasının rəngləri Romada Azərbaycan
+                və İtaliya rəssamlarının sərgisi»
+              </h3>
+              <div class="content">
+                <p>
+                  “Sönməz Məşəl” Mədəni Əlaqələr İctimai Birliyi layihə
+                  çərçivəsində iyunun 18-dən 22-dək Romada Azərbaycan və İtaliya
+                  qadın rəssamlarının birgə sərgisini təşkil edib. Sərgidə iki
+                  ölkənin gənc qadın rəssamlarının Nizami Gəncəvinin əsərlərinə
+                </p>
+                <div class="project-info">
+                  <div class="box">
+                    <p>Layihə müddəti:</p>
+                    <span>1 may 2013 – 31 iyul 2013-06-26 </span>
+                  </div>
+                  <div class="box">
+                    <p>Maliyyə dəstəyi:</p>
+                    <span
+                      >Azərbaycan Respublikasının Prezidenti yanında
+                      Qeyri-Hökumət Təşkilatlarına Dövlət Dəstəyi Şurası Milli
+                      M</span
+                    >
+                  </div>
+                </div>
+                <div class="show-more">
+                  <a href="layiheler/nizami_dunya.php">Ətraflı oxu</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h3>
+                “Rənglər çələngi: Azərbaycanın Dağlıq Qarabağ rəngləri
+                Melburnda”
+              </h3>
+              <div class="content">
+                <p>
+                  İyunun 15-dən 22-dək Melburnda fəaliyyət göstərən Dikin
+                  Universitetində Azərbaycanın gənc qadın rəssamlarının –
+                  Nərminə Vəliyeva, Şəhla Qəhrəmanlı və Günay Həsənovanın
+                  Qarabağ mövzusunda əsərlərindən ibarət sərgi təşkil olunub.
+                </p>
+                <div class="project-info">
+                  <div class="box">
+                    <p>Layihə müddəti:</p>
+                    <span>1 aprel 2014 – 30 iyun 2014 </span>
+                  </div>
+                  <div class="box">
+                    <p>Maliyyə dəstəyi:</p>
+                    <span
+                      >Azərbaycan Respublikasının Prezidenti yanında
+                      Qeyri-Hökumət Təşkilatlarına Dövlət Dəstəyi Şurası
+                    </span>
+                  </div>
+                </div>
+                <div class="show-more">
+                  <a href="layiheler/reng_celeng.php">Ətraflı oxu</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <h3>
+                  “Odlar yurdunun min bir rəngi” adlı mədəniyyət proqramının
+                  təşkili
+                </h3>
+                <div class="content">
+                  <p>
+                    Azərbaycan Respublikasının tarixi və mədəniyyəti haqqında,
+                    ölkənin demokratiya sahəsində əldə etdiyi uğurlar barədə
+                    Avropada təbliğat işi aparmaq indi həmişəkindən daha mühüm
+                    əhəmiyyət kəsb edir.
+                  </p>
+                  <div class="project-info">
+                    <div class="box">
+                      <p>Layihə müddəti:</p>
+                      <span>10 aprel 2015 – 10 iyul 2015 </span>
+                    </div>
+                    <div class="box">
+                      <p>Maliyyə dəstəyi:</p>
+                      <span
+                        >Azərbaycan Respublikasının Prezidenti yanında
+                        Qeyri-Hökumət Təşkilatlarına Dövlət Dəstəyi Şurası
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="show-more">
+                  <a href="layiheler/odlar_yurdu.php">Ətraflı oxu</a>
+                </div>
+              </div>
+            </div>vcxvxc
+            <div class="card">
+              <h3>Azərbaycanlı qadın yazıçıların poeziya antologiyasının nəşri (müxtəlif dövrlər)
+              </h3>
+              <div class="content">
+                <p>
+                  “Sönməz Məşəl” Mədəni Əlaqələr İctimai Birliyi ən qədim
+                  dövrlərdən bu günə qədər yazıb-yaratmış Azərbaycan qadın
+                  yazıçılarının seçilmiş əsərlərindən ibarət kitab çap edib.
+                  Əsərlər həm Azərbaycan, həm də ingilis dillərində verilib
+                </p>
+                <div class="project-info">
+                  <div class="box">
+                    <p>Layihə müddəti:</p>
+                    <span>15 dekabr 2014 – 30 iyul 2014 </span>
+                  </div>
+                  <div class="box">
+                    <p>Maliyyə dəstəyi:</p>
+                    <span
+                      >UNESCO üzrə Azərbaycan Respublikasının Milli Komissiyası
+                    </span>
+                  </div>
+                </div>
+                <div class="show-more">
+                  <a href="layiheler/azer_qadin.php">Ətraflı oxu</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h3>“Peace lullaby” project</h3>
+              <div class="content">
+                <p>
+                  AAFSW and WIPAC, in association with Azerbaijan University of
+                  Languages, Sonmaz Mashal CRPU in Azerbaijan presented
+                  brilliant creation of forging a poem with music composition
+                  entitled “The Lullaby of Peace” in Arts Club of Washington.
+                  Haskell Small, pianist and composer, envisioned the music.
+                  Chateau Gardecki
+                </p>
+                <div class="project-info">
+                  <div class="box">
+                    <p>Layihə müddəti:</p>
+                    <span>October, 2017-December, 2017</span>
+                  </div>
+                  <div class="box">
+                    <p>Maliyyə dəstəyi:</p>
+                    <span
+                      >Azerbaijan University of Languages Washington
+                      International Piano Arts Council
+                    </span>
+                  </div>
+                </div>
+                <div class="show-more">
+                  <a href="layiheler/PEACE_LULLABY.php">Ətraflı oxu</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h3>“The World of Colours of Azerbaijan in Abu Dhabi”</h3>
+              <div class="content">
+                <p>
+                  The paintings by the young woman artists of Azerbaijan Narmina
+                  Valiyeva, Zahra Mammadova, Ayan Nabiyeva, Roza Alakbarova and
+                  Sofiya Rasulova were demonstrated at the exhibition organized
+                  in Abi Dhabi in October, 2017.
+                </p>
+                <div class="project-info">
+                  <div class="box">
+                    <p>Layihə müddəti:</p>
+                    <span>September 01, 2017 – November 31, 2017</span>
+                  </div>
+                  <div class="box">
+                    <p>Maliyyə dəstəyi:</p>
+                    <span
+                      >The Council on State Support to Non-Governmental
+                      Organizations
+                    </span>
+                  </div>
+                </div>
+                <div class="show-more">
+                  <a href="layiheler/Abu_Dhabi.php">Ətraflı oxu</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h3>
+                “Women Create! Creative Conversations on Gender Equity and
+                Women’s Achievements in Azerbaijan”
+              </h3>
+              <div class="content">
+                <p>
+                  This project brought together 36 of the best emerging young
+                  Azerbaijani creative women in Azerbaijan, both visual artists
+                  and literary writers, for a workshop, exhibition and reading,
+                  and book publication.
+                </p>
+                <div class="project-info">
+                  <div class="box">
+                    <p>Layihə müddəti:</p>
+                    <span>March 1, 2017 – 28 February, 2018</span>
+                  </div>
+                  <div class="box">
+                    <p>Maliyyə dəstəyi:</p>
+                    <span>March 1, 2017 – 28 February, 2018</span>
+                  </div>
+                </div>
+                <div class="show-more">
+                  <a href="layiheler/Women Create!.php">Ətraflı oxu</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h3>
+                Production of a documentary film under the name of “Deportation.
+                A Cold Winter of 1948”
+              </h3>
+              <div class="content">
+                <p>
+                  The project is dedicated to one of the painful pages of the
+                  history of Azerbaijan-the topic of deportation of the
+                  Azerbaijanis happening in the years of 1948-1953. As it is
+                  known massive deportation of the Azerbaijanis living in
+                  Armenia began to be deported and the people were driven away
+                  from the places they had settled for hundred years.
+                </p>
+                <div class="project-info">
+                  <div class="box">
+                    <p>Layihə müddəti:</p>
+                    <span>September, 2018 – October, 2018</span>
+                  </div>
+                  <div class="box">
+                    <p>Maliyyə dəstəyi:</p>
+                    <span
+                      >The Council on State Support to Non-Governmental
+                      Organization
+                    </span>
+                  </div>
+                </div>
+                <div class="show-more">
+                  <a href="layiheler/deportation.php">Ətraflı oxu</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h3>The Harmony of the Colours of Azerbaijan</h3>
+              <div class="content">
+                <p>
+                  Within the framework of the project an art exhibition of the
+                  young Azerbaijani woman artists was organized in Pruszkow,
+                  District of Poland under the Maliyyə dəstəyi of the State
+                  Support Council to the NGOs under the Auspices of the
+                  President of the Republic of Azerbaijan in collaboration
+                </p>
+                <div class="project-info">
+                  <div class="box">
+                    <p>Layihə müddəti:</p>
+                    <span>May 01, 2019-July 31, 2019</span>
+                  </div>
+                  <div class="box">
+                    <p>Maliyyə dəstəyi:</p>
+                    <span
+                      >The Council on State Support to Non-Governmental
+                      Organizations
+                    </span>
+                  </div>
+                </div>
+                <div class="show-more">
+                  <a href="layiheler/harmony.php">Ətraflı oxu</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h3>
+                “The Poet of Two Worlds” dedicated to 650-year anniversary of
+                the Azerbaijani poet and thinker İmadaddin Nasimi
+              </h3>
+              <div class="content">
+                <p>
+                  The students of the Azerbaijan University of Languages who led
+                  the event and gave detailed information to the event
+                  participants about the worldwide characteristics, universal
+                  feelings expressed in Nasimi’s poetry in English and
+                  Azerbaijani language.
+                </p>
+                <div class="project-info">
+                  <div class="box">
+                    <p>Layihə müddəti:</p>
+                    <span>December 18, 2019</span>
+                  </div>
+                  <div class="box">
+                    <p>Maliyyə dəstəyi:</p>
+                    <span
+                      >The Department of Literature of Foreign Countries of the
+                      Azerbaijan University of Languages
+                    </span>
+                  </div>
+                </div>
+                <div class="show-more">
+                  <a href="layiheler/imameddin.php">Ətraflı oxu</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h3>"Music that Astonishes the World"</h3>
+              <div class="content">
+                <p>
+                  The project dedicated to the 135th anniversary of the great
+                  composer Uzeyir Hajibeyli, the founder of the modern
+                  professional music school of Azerbaijan was implemented in
+                  partnership with the Azerbaijan National Conservatory, the
+                  Azerbaijan-American Music Foundation and Washington
+                  International Piano Arts Council.
+                </p>
+                <div class="project-info">
+                  <div class="box">
+                    <p>Layihə müddəti:</p>
+                    <span>July 01, 2020 – October 01, 2020 </span>
+                  </div>
+                  <div class="box">
+                    <p>Maliyyə dəstəyi:</p>
+                    <span
+                      >The Council on State Support to Non-Governmental
+                      Organization
+                    </span>
+                  </div>
+                </div>
+                <div class="show-more">
+                  <a href="layiheler/music that astonishes world.php"
+                    >Ətraflı oxu</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h3>“SEVEN BEAUTİES, SEVEN CULTURES AND SEVEN PLANETS”</h3>
+              <div class="content">
+                <p>
+                  By the order of the President of the Republic of Azerbaijan
+                  Ilham Aliyev, 2021 has been declared the Year of Nizami
+                  Ganjavi in the Republic of Azerbaijan on the occasion of 880th
+                  anniversary of the great Azerbaijan poet Nizami Ganjavi. The
+                  project team of “Sonmaz Mashall” Cultural Relations Public
+                  Union have implemented a project entitled “Seven Beauties,
+                  Seven Cultures and Seven Planets” as a result of which a CD
+                  covering the material on analysys of
+                </p>
+                <div class="project-info">
+                  <div class="box">
+                    <p>Layihə müddəti:</p>
+                    <span>July 01, 2021 – October 01, 2021 </span>
+                  </div>
+                  <div class="box">
+                    <p>Maliyyə dəstəyi:</p>
+                    <span
+                      >Fund for Support to Azerbaijani Diaspora created under
+                      The State
+                    </span>
+                  </div>
+                </div>
+                <div class="show-more">
+                  <a href="layiheler/SEVEN BEAUTİES.php">Ətraflı oxu</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h3>“The Clouded Mountains of Shusha”</h3>
+              <div class="content">
+                <p>
+                  The film produced within the framework of the project tells
+                  about the history of the establishment of the city of Shusha
+                  and unfolds the turbulent pages of that history. Attacks on
+                  Shusha in different periods, the destruction of the city as a
+                  result of these attacks are highlighted and analysed in the
+                  film. The film refers to archival do
+                </p>
+                <div class="project-info">
+                  <div class="box">
+                    <p>Layihə müddəti:</p>
+                    <span>April 01, 2022 – July 01, 2022 </span>
+                  </div>
+                  <div class="box">
+                    <p>Maliyyə dəstəyi:</p>
+                    <span
+                      >Agency for State Support to NGOs of the Republic of
+                      Azerbaijan
+                    </span>
+                  </div>
+                </div>
+                <div class="show-more">
+                  <a href="layiheler/Shusha.php">Ətraflı oxu</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h3>“The History of Shusha in English”</h3>
+              <div class="content">
+                <p>
+                  The year of 2022 was declared "Year of Shusha" in the Republic
+                  of Azerbaijan by the order of President Ilham Aliyev and on
+                  this occasion Sonmaz Mashall Cultural Relations Public Union
+                  has realized a project entitled "
+                </p>
+                <div class="project-info">
+                  <div class="box">
+                    <p>Layihə müddəti:</p>
+                    <span>September 01, 2022 – November 01, 2022</span>
+                  </div>
+                  <div class="box">
+                    <p>Maliyyə dəstəyi:</p>
+                    <span
+                      >Agency for State Support to NGOs of the Republic of
+                      Azerbaijan
+                    </span>
+                  </div>
+                </div>
+                <div class="show-more">
+                  <a href="layiheler/The History of Shusha in English.php"
+                    >Ətraflı oxu</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h3>
+                "The Clouded Mountains of Shusha" feature-documentary film in
+                Warsaw
+              </h3>
+              <div class="content">
+                <p>
+                  The feature-documentary film titled "The Clouded Mountains of
+                  Shusha," produced during the "Year of Shusha" in English by
+                  "Sonmaz Mashall" Cultural Relations Public Union,
+                </p>
+                <div class="project-info">
+                  <div class="box">
+                    <p>Layihə müddəti:</p>
+                    <span>October 15, 2023 – November 15, 2023 </span>
+                  </div>
+                  <div class="box">
+                    <p>Maliyyə dəstəyi:</p>
+                    <span
+                      >Agency for State Support to NGOs of the Republic of
+                      Azerbaijan
+                    </span>
+                  </div>
+                </div>
+                <div class="show-more">
+                  <a href="layiheler/The History of Shusha in English.php"
+                    >Ətraflı oxu</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
-          <div class="card">
-            <h3>Literature Program For The Garadag School District</h3>
-            <p>
-              The project was implemented to provide school libraries and
-              teachers of Garadag School District with educational and general
-              reading materials written in the English language.
-            </p>
-          </div>
-          <div class="card">
-            <h3>Literature Program For The Garadag School District</h3>
-            <p>
-              The project was implemented to provide school libraries and
-              teachers of Garadag School District with educational and general
-              reading materials written in the English language.
-            </p>
-          </div>
-          <div class="card">
-            <h3>Literature Program For The Garadag School District</h3>
-            <p>
-              The project was implemented to provide school libraries and
-              teachers of Garadag School District with educational and general
-              reading materials written in the English language.
-            </p>
-          </div>
-          <button class="orangeBtn">Show More</button>
+          <button
+            id="showMoreBtn"
+            class="orangeBtn"
+            style="display: none; margin: auto"
+          >
+            Show More
+          </button>
         </div>
-        <ul>
-            <li><a href="layiheler/edebiyyat_programinin_genis.php">The Project on Creation of a Textual Database for the Development and Codification of the Azerbaijani Language</a></li>
-            <li><a href="layiheler/bazanin_layihesi.php">The Project on Creation of a Textual Database for the Development and Codification of the Azerbaijani Language</a></li>
-            <li><a href="layiheler/bazanin_layihesi_genis.php">Expansion of the e-database for the purpose of development and codification of Azerbaijani language</a></li>
-            <li><a href="layiheler/qadin_edeb_cemiyyet.php">Women, Literature and Society</a></li>
-            <li><a href="layiheler/dunya_reng.php">Painting the World Together: Karabakh Color of Azerbaijan”</a></li>
-            <li><a href="layiheler/qadin_edeb_cemiyyet_genis.php">“Expansion of Women, Literature and Society project: Writing Women in Regions”</a></li>
-            <li><a href="layiheler/reng_dialoq.php">“ Dialogue of Colors: Azerbaijan-Germany ”</a></li>
-            <li><a href="layiheler/nizami_dunya.php">" Colours of Azerbaijani Poet Nizami's World"( an art exhibition of the young Azerbaijani and Italian woman artists)</a></li>
-            <li><a href="layiheler/reng_celeng.php">“Nakorno-Karabakh Colours of Azerbaijan in Melbourne”</a></li>
-            <li><a href="layiheler/odlar_yurdu.php">“One Thousand and One Colours of the Land of Fire”</a></li>
-            <li><a href="layiheler/azer_qadin.php">Publication of an anthology of poetry by Azerbaijani women writers over the centuries</a></li>
-            <li><a href="layiheler/reng_seyahet.php">"Travel of Colours: Baku-Budapest”</a></li>
-            <li><a href="layiheler/PEACE_LULLABY.php">“PEACE LULLABY” PROJECT</a></li>
-            <li><a href="layiheler/Abu_Dhabi.php">“The World of Colours of Azerbaijan in Abu Dhabi”</a></li>
-            <li><a href="layiheler/Women Create!.php"> “Women Create! Creative Conversations on Gender Equity and Women’s Achievements in Azerbaijan”</a></li>
-            <li><a href="layiheler/deportation.php"> Production of  a documentary film under the name of “Deportation. A Cold Winter of 1948”</a></li>
-            <li><a href="layiheler/harmony.php"> The Harmony of the Colours of Azerbaijan</a></li>
-            <li><a href="layiheler/imameddin.php"> “The Poet of Two Worlds” dedicated to 650-year anniversary of the Azerbaijani poet and thinker İmadaddin Nasimi</a></li>
-            <li><a href="layiheler/music that astonishes world.php">"Music that Astonishes the World" project“</a></li>
-            <li><a href="layiheler/SEVEN BEAUTİES.php">" “SEVEN BEAUTİES, SEVEN CULTURES AND SEVEN PLANETS” PROJECT</a></li>
-            <li><a href="layiheler/Shusha.php">" “The Clouded Mountains of Shusha” PROJECT</a></li>
-            <li><a href="layiheler/The History of Shusha in English.php">" “The History of Shusha in English” PROJECT</a></li>
-            <li><a href="layiheler/documentary film in Warsaw.php">"The Clouded Mountains of Shusha" feature-documentary film in Warsaw PROJECT</a></li>
-        </ul>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="container">
+        <div>
+          <a href="#"><img src="images//footerLogo.png" alt="" /></a>
+          <p>
+            Sonmaz Mashall Cultural Relations Public Union is a non-profit
+            organization that brings together members based on shared interests,
+            guided by principles of free will and equality, with no profit
+            motive.
+          </p>
+        </div>
+        <div class="menu">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Organization</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Membership</a></li>
+            <li><a href="#">News</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow Us</h4>
+
+          <a href="https://www.facebook.com/sonmazmashal/" target="_blank"
+            ><img src="images//icons/facebook.svg" alt=""
+          /></a>
+          <a href="https://www.twitter.com/sonmazmashal/" target="_blank"
+            ><img src="images//icons/twitter.svg" alt=""
+          /></a>
+          <a href="#"><img src="images//icons/linkedin.svg" alt="" /></a>
+          <a href="#"><img src="images//icons/youtube.svg" alt="" /></a>
+          <a href="https://www.instagram.com/sonmazmashal/" target="_blank"
+            ><img src="images//icons/instagram.svg" alt=""
+          /></a>
+        </div>
+      </div>
+      <hr class="divider" />
+      <p class="copyright">2024 Sonmaz Mashal. All rights reserved</p>
+    </footer>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/newScripts.js"></script>
   </body>
 </html>

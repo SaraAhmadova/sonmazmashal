@@ -327,6 +327,51 @@
     /* 150% */
     letter-spacing: -0.32px;
   }
+  #reports .container #reportContainer #prevBtn {
+    left: 0 !important;
+  }
+  #reports .container #reportContainer #nextBtn {
+    right: 0 !important;
+  }
+  #reports .container .reportList {
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+  }
+  #reports .container .reportList li {
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid #ededf0;
+    background: rgba(255, 255, 255, 0.05);
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+  }
+  #reports .container .reportList li span {
+    font-size: 56px;
+  }
+  #reports .container .reportList li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 3px 12px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 100px;
+    background: #ffe6c7;
+    color: #ff7042;
+  }
   footer {
     padding-top: 100px;
   }

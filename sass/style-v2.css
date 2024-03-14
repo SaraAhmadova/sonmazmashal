@@ -562,18 +562,23 @@ body #latest-news .container .news-block .divider {
 }
 
 body #projects {
-  padding: 30px;
+  padding: 80px 0;
+  background-image: url(../images/ProjectsBg2.png);
+  background-size: cover;
 }
 
 body #projects h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 48px;
-  font-weight: 600;
-  background: linear-gradient(164deg, #ff8a00 9.49%, rgba(255, 61, 0, 0.69) 97.63%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ff8a00;
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 64px;
   text-align: center;
+}
+
+body #projects .bgImg {
+  background-image: url(../images/projectBg.png);
+  background-size: 100%;
+  background-repeat: repeat-y;
 }
 
 body #projects .container {
@@ -593,6 +598,16 @@ body #projects .container .card {
   padding: 23px;
   border-radius: 8px;
   border: 1px solid #ffba6d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background: linear-gradient(161deg, rgba(255, 217, 171, 0.14) 15.55%, rgba(255, 209, 154, 0.25) 96.59%);
   -webkit-backdrop-filter: blur(12.5px);
           backdrop-filter: blur(12.5px);
@@ -605,6 +620,12 @@ body #projects .container .card h3 {
   font-style: normal;
   font-weight: 500;
   letter-spacing: -1.2px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
 }
 
 body #projects .container .card p {
@@ -618,6 +639,40 @@ body #projects .container .card p {
   line-height: 24px;
   /* 150% */
   letter-spacing: -0.32px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+body #projects .container .card .project-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #projects .container .card .project-info .box {
+  width: 45%;
+}
+
+body #projects .container .card .project-info .box p {
+  margin: 0;
+}
+
+body #projects .container .card .project-info .box span {
+  font-size: 14px;
+  color: rgba(4, 24, 47, 0.45);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
 }
 
 body #projects .container .card .show-more {
@@ -627,6 +682,7 @@ body #projects .container .card .show-more {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-top: 20px;
 }
 
 body #projects .container .card .show-more a {
@@ -634,10 +690,22 @@ body #projects .container .card .show-more a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 24px;
   /* 150% */
   letter-spacing: -0.32px;
+}
+
+body #projects .container .card .show-more a::after {
+  content: "";
+  height: 8px;
+  width: 8px;
+  display: inline-block;
+  margin-left: 10px;
+  border-right: 2px solid #ff8a00;
+  border-top: 2px solid #ff8a00;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
 }
 
 body main#organization {
@@ -723,6 +791,147 @@ body main#organization #organization_aboutUs p {
   text-align: center;
   font-size: 16px;
   line-height: 24px;
+}
+
+body #membership {
+  padding: 80px 0;
+  background-image: url(../images/bannerBg.png);
+  background-size: cover;
+}
+
+body #membership .infoBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 60%;
+  margin: auto;
+  padding: 120px 80px;
+  border-radius: 12px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 226, 193, 0.25)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, rgba(255, 226, 193, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 112, 67, 0.25), 0px 1px 2.5px 0px rgba(179, 127, 111, 0.25);
+          box-shadow: 0px 0px 0px 1px rgba(255, 112, 67, 0.25), 0px 1px 2.5px 0px rgba(179, 127, 111, 0.25);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+}
+
+body #membership .infoBox h3 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  /* 120% */
+  letter-spacing: -2px;
+}
+
+body #reports {
+  padding: 80px 0;
+  background-image: url(../images/bannerBg.png);
+}
+
+body #reports .container {
+  overflow: hidden;
+}
+
+body #reports .container #reportContainer {
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+body #reports .container #reportContainer #prevBtn,
+body #reports .container #reportContainer #nextBtn {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  border: none;
+  border-right: 2px solid #000;
+  border-top: 2px solid #000;
+  height: 30px;
+  width: 30px;
+  background-color: unset;
+}
+
+body #reports .container #reportContainer #prevBtn {
+  left: -50px;
+  -webkit-transform: rotateZ(-135deg);
+          transform: rotateZ(-135deg);
+}
+
+body #reports .container #reportContainer #nextBtn {
+  right: -50px;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+body #reports .container .reportList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+body #reports .container .reportList li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% / 6);
+          flex: 0 0 calc(100% / 6);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #ededf0;
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}
+
+body #reports .container .reportList li span {
+  font-size: 56px;
+}
+
+body #reports .container .reportList li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3px 12px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100px;
+  background: #ffe6c7;
+  color: #ff7042;
+  font-size: 14px;
+}
+
+body #reports .container .reportList li a img {
+  margin-left: 3px;
 }
 
 body footer {
